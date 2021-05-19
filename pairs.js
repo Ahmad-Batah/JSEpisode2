@@ -43,6 +43,16 @@ function pairs(names) {
   console.log(random);
   return pairs
 } 
+const arr = ["Asis", "Hamsa", "Fawas", "Mishmish", "Hussein", "Lailz", "Mr Potato"];
+const removeRandom = (names) => {
+   while(names.length){
+      const random = Math.floor(Math.random() * names.length);
+      const el = names.splice(random,1)[0];
+      console.log(el);
+      console.log(names.splice(random));
+   }
+};
+removeRandom(arr);
 
 
 module.exports = pairs;
