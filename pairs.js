@@ -34,11 +34,16 @@
  ************************************************/
 Array.prototype.getRandom = function () {
   return this.splice(Math.floor(Math.random() * this.length), 1)[0];
-};
-
+}
 function pairs(names) {
   // Your code goes here
-}
+  const pairs =(["Asis", "Hamsa", "Fawas", "Mishmish", "Hussein", "Lailz", "Mr Potato"]);
+ 
+  let random = pairs.getRandom();
+  console.log(random);
+  return pairs
+} 
+
 
 module.exports = pairs;
 
